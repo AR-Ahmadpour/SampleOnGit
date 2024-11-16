@@ -1,0 +1,11 @@
+﻿using Accreditation.Domain.AccInstanceMehvarEnvironmentStandardsResults.Entities;
+using Accreditation.Domain.AccreditationInstancesEnvironmentStandardsResults.Entities;
+
+namespace Accreditation.Application.Common.Interfaces.Persistence.AccreditationInstancesEnvironmentStandardsResults;
+
+public interface IAccreditationInstancesEnvironmentStandardsResultRepository
+{
+    void Add(AccreditationInstancesEnvironmentStandardsResult accreditationInstanEnvironmentStandardsResult);
+    Task<List<AccreditationInstancesEnvironmentStandardsResult>> GetListAccInstanceAsync(Guid accInstanceGuid);
+    void Delete(AccreditationInstancesEnvironmentStandardsResult accreditationInstanEnvironmentStandardsResult);
+}

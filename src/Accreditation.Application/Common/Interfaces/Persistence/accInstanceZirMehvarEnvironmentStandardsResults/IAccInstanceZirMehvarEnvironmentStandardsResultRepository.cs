@@ -1,0 +1,10 @@
+﻿using Accreditation.Domain.AccInstanceZirMehvarEnvironmentStandardsResults.Entities;
+
+namespace Accreditation.Application.Common.Interfaces.Persistence.accInstanceZirMehvarEnvironmentStandardsResults;
+
+public interface IAccInstanceZirMehvarEnvironmentStandardsResultRepository
+{
+    void Add(AccInstanceZirMehvarEnvironmentStandardsResult accInstancezirMehvarResult);
+    Task<List<AccInstanceZirMehvarEnvironmentStandardsResult>> GetListAccInstanceZirMehvarAsync(Guid accInstanceZirMehvarResultGuid);
+    void Delete(AccInstanceZirMehvarEnvironmentStandardsResult accInstancezirMehvarResult);
+}
